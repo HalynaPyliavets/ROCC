@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!--ЦЕ тестова сторінка - НЕ для перевірки, зробила заготовку форми, яка відсутня на макеті-->
+
+  <!--Форма з лекції №10-->
+    <section class="values-form">
+      <div class="container">
+        <h2 class="main-title">
+          Получить рассчет стоимости доставки вашего груза</h2>
+      </div>
+      <div class="form-wrap">
+        <div>
+          <span class="form-slide-counter form-slide-active">1</span>
+          <span class="form-slide-counter">2</span>
+          <span class="form-slide-counter">3</span>
+        </div>
+        <div class="form-row">
+          <label>
+            <span>Категория товара</span> 
+            <input type="text" placeholder="Категория товара">
+          </label>
+
+          <label>
+            <span>Стоимость груза</span> 
+            <input type="text" placeholder="Введите стоимость">
+          </label>
+        </div>
+      </div>
+
+    </section>
+  
+
+
+
+
+
+
+    <!--Форми для кнопок Contact, Book now-->
+    <section> 
+      <!--Форма для Contact-->
+      <form action="https://fom.in.ua/echo" method="POST" name="Contact"> 
+          <h3>Contact</h3>
+          <fieldset>
+            <legend>Contact Information</legend>
+              <div>
+                <label for="user-name">Name:</label> 
+                <input type="text" name="Name" id="user-name" placeholder="Write your name" required>
+              </div>
+      
+              <div>
+                <label for="phone-number">Phone number:</label> 
+                <input type="tel" name="phone-number" id="phone-number" placeholder="Write your phone number" required>
+              </div>
+    
+              <div>
+                <label>
+                    <input type="submit" value="Send phone number"> 
+                </label>
+                <label>
+                  <input type="reset" value="Clean"> 
+                </label>
+              </div>
+          </fieldset>
+  
+      </form>
+    
+      <!--Форма для Book now-->
+      <form action="https://fom.in.ua/echo" method="POST" name="book now"> 
+          <h3>Book now</h3>
+          <fieldset>
+            <legend>Contact Information</legend>
+            <div>
+              <label for="user-name-surname">Name and surname:</label> 
+              <input type="text" name="Name and surname" id="user-name-surname" placeholder="Write your name and surname" required>
+            </div>
+      
+            <div>
+              <label for="user-email">E-mail:</label> 
+              <input type="email" id="user-email" name="E-mail:" placeholder="Write your e-mail" required multiple> 
+            </div>
+            
+            <div>
+              <label for="house-number">House number:</label>
+              <input type="number" name="house-number" id="house-number">
+            </div>
+      
+            <div>
+              <label for="date-from">Date:</label> 
+              <input type="date" name="date-from" id="date-from">
+              <label>
+                <input type="date" name="date-to">
+              </label>
+            </div>
+            
+            <div>
+              <label>
+                <input type="submit" value="Book now"> 
+              </label>
+              <label>
+                <input type="reset" value="Clean"> 
+              </label>
+            </div>
+          </fieldset>
+      </form>
+      
+      
+    </section>
+</body>
+</html>
