@@ -29,14 +29,13 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   
   <link rel="stylesheet" href="./style/reset.css"> <!--зкидання всіх налаштувань браузера, завдяки цьому можна розпочати стилізацію як з чистого листа, йде першим у списку посилань-->
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com"> <!--підключення шрифтів, що є вільними в доступі в GoogleFonts-->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"> <!--підключення шрифтів, що є вільними в доступі в GoogleFonts--> 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="./style/custom.css"> <!--підключення стилів, йде обовязково після зкидання стилів reset, а не до них; за рекомендацією В'ячеслава прописано після підключенням шрифтів-->
   
-
   <!--підключення карусельки (сайт Slick) - слайдера  по абсолютному посиланню-->
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> 
   <!--переключателі слайдерів стали по бокам слайдера та перетворились на кнопочки (стрілочки)-->
@@ -49,15 +48,19 @@
 <body> 
   <!--HEADER-->
   <header>
-    <div class="logo"></div>
-    <ul class="header-menu">
-      <li>
-        <a>1</a>
-      </li>
-      <li>
-        <a>2</a>
-      </li>
-    </ul>
+    <div class="main-container">  <!--типовий контейнер для всіх глобальних частин сайту із шириною, центруванням...-->
+      <div class="header">
+        <nav>
+          <ul class="nav"> 
+            <li><a href="./index.html" title="go to Better">Better</a></li>
+            <li><a href="./index.html" title="go to Shop">Shop</a></li>
+            <li><a href="./index.html" title="go to Subscription">Subscription</a></li>
+            <li><a href="./index.html" title="go to Contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    
+    </div>
   </header>
 
   <!--MAIN-->
