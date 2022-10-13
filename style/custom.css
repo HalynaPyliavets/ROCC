@@ -6,33 +6,35 @@
 
 body { 
   font-family: Roboto;
-  background: #E5E5E5;;
+  background: #E5E5E5;
 }
 
-.main-container {
+.general-container {
   width: 100%;
   max-width: 1440px;
   background-color: #FDFBED;
   margin: 0 auto; /*щоб контент сайту був посередині*/ 
 }
 
+/*HEADER----------------------------------------------------------------------------------------------------------------HEADER*/ 
 .header {
-  display: flex;
-  flex-direction: row;
+  width: 100%;
+  max-width: 1440px;
   background-color: #526E3E;
-  width: 1440px;
+  padding: 0;
+  overflow: hidden; 
 }
 
-.nav {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 58px;
+.header-nav {
+  justify-content: space-between; /*прижимает содержимое к краям */
+  margin-left: 45px;
   margin-top: 30px;
-  padding-bottom: 27px;
+  padding-bottom: 13px;
   width: 304px;
+  overflow: hidden;
   }
 
-.header a {
+.header-nav a {
   text-decoration: none; /*прибираємо підкреслювання посилань*/ 
   color: #FFFFFF;
   font-size: 14px;
@@ -54,11 +56,47 @@ body {
   text-shadow: 0 0 .25px #333, 0 0 .25px #333;
 }
 
-.nav {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 58px;
-  margin-top: 30px;
-  padding-bottom: 27px;
-  width: 304px;
-  }
+
+
+/*MAIN----------------------------------------------------------------------------------------------------------------MAIN*/
+/*MAIN, частина main-block-------------------------------------------------------------------MAIN, частина main-block*/
+.main__main-block {
+  width: 100%;
+  max-width: 1440px;
+  overflow: hidden;
+}
+
+.main-block__background { 
+  width: 100%;
+  max-width: 1440px;
+  padding-top: 254px;
+  padding-bottom: 80px;
+  background-image: url(../images/Main.png);
+  background-repeat: no-repeat; /*обовязково вказувати*/ 
+  background-size: contain; /*рекомендовано завжди вказувати*/ 
+  overflow: hidden;
+}
+
+.main-block__logo {
+  width: 418px;
+  margin-left: 511px;
+
+}.main-block__title {
+  width: 100%;
+  max-width: 813px;
+  margin-top: 118px;
+  margin-left: 324px;
+  overflow: hidden;
+}
+.main-block__title__first {
+  font-family: Roboto;
+  font-size: 57px;
+  font-weight: 700;
+  line-height: 62px;
+  letter-spacing: 0em;
+  text-align: center;  
+  color: #FFFFFF;
+}
+
+/*MAIN, частина product-------------------------------------------------------------------MAIN, частина product*/ 
+
