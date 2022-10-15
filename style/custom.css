@@ -194,6 +194,42 @@ body {
   color: #FDFBED;
 }
 
+/*MAIN, частина description-pack--------------------------------------------------------------------MAIN, частина description-pack*/
+.main__description-pack { 
+  display: flex;
+  flex-direction: row;
+  padding-top: 85px;
+  background: #FFFFFF;
+  overflow: hidden;
+}
+
+.description-pack__block-text {
+  width: 530px;
+  margin-top: 45px;
+  margin-bottom: 100px;
+  padding-left: 130px;
+  overflow: hidden;
+}
+
+.description-pack__title_third {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.4300000071525574px;
+  text-align: left;
+  color: #526E3E;
+  margin-top: 47px;
+}
+
+.description-pack__paragraph {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #526E3E;
+  margin-top: 23px;
+}
+
 
 /*МЕДІА-ЗАПИТИ------------------------------------------------------------------------------------------------------------------МЕДІА-ЗАПИТИ--------------*/ 
 /*1440--------------------------------------------------------------------------------------------------------------------------1440px*/ 
@@ -216,6 +252,13 @@ body {
   .product__button {
     margin-left: 510px;
   }
+
+  /*MAIN, частина description-pack---------------------------------------------------------MAIN, частина description-pack*/ 
+  .description-pack__block-text {
+    width: 450px;
+    padding-left: 30px;
+  }
+
 } 
 
 /*1200-----------------------------------------------------------------------------------------------------------------------------1200px*/ 
@@ -228,6 +271,44 @@ body {
   .product__button {
     margin-left: 410px;
   }
+
+  /*MAIN, частина description-pack---------------------------------------------------------MAIN, частина description-pack*/ 
+  .main__description-pack { 
+    flex-wrap: wrap;
+    padding-top: 0px;
+  }
+  .description-pack__block-img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .description-pack__block-text {
+    width: auto;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-left: auto;
+    padding-left: 0px;
+  }
+  .img-tube {
+    margin-left: 400px;
+  }
+  .description-pack__title_third {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0.4300000071525574px;
+    text-align: center;
+    margin-top: 0px;
+  }
+  .description-pack__paragraph {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 18px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+
 } 
 
 /*998-----------------------------------------------------------------------------------------------------------------------------------------998px*/ 
@@ -256,9 +337,26 @@ body {
   .product__button {
     margin-left: 300px;
   }
+
+  /*MAIN, частина description-pack---------------------------------------------------------MAIN, частина description-pack*/ 
+  .img-tube {
+    margin-left: 330px;
+  }
+  .description-pack__title_third {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 26px;
+  }
+  .description-pack__paragraph {
+    font-size: 10px;
+    font-weight: 250;
+    line-height: 16px;
+    margin-top: 6px;
   }
   
 
+}
+  
   /*768----------------------------------------------------------------------------------------------------------------------------------768px*/ 
 @media (max-width: 768px) {
   .general-container {
@@ -293,6 +391,22 @@ body {
     margin-top: 20px;
     margin-left: 200px;
   }
+
+  /*MAIN, частина description-pack---------------------------------------------------------MAIN, частина description-pack*/ 
+  .img-description-pack {
+    height: 397px;
+    width: 520px;
+  }
+  .description-pack__block-text {
+    padding-right: 10px;
+    padding-right: 10px;
+  }
+  .img-tube {
+    height: 30px;
+    width: 13px;
+    margin-left: 270px;
+  }
+
 } 
 
 /*576----------------------------------------------------------------------------------------------------------------------------------576px*/ 
@@ -329,6 +443,29 @@ body {
     margin-top: 10px;
     margin-left: 70px;
   }
+
+  /*MAIN, частина description-pack---------------------------------------------------------MAIN, частина description-pack*/ 
+  .img-description-pack {
+    height: 220px;
+    width: 310px;
+  }
+  .img-tube {
+    height: 15px;
+    width: 7px;
+    margin-left: 150px;
+  }
+  .description-pack__title_third {
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 20px;
+  }
+  .description-pack__paragraph {
+    font-size: 10px;
+    font-weight: 200;
+    line-height: 14px;
+    margin-top: 2px;
+  }
+
 }
 
 
