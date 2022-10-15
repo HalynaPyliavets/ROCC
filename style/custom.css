@@ -197,7 +197,6 @@ body {
 /*MAIN, частина description-pack--------------------------------------------------------------------MAIN, частина description-pack*/
 .main__description-pack { 
   display: flex;
-  flex-direction: row;
   padding-top: 85px;
   background: #FFFFFF;
   overflow: hidden;
@@ -230,8 +229,46 @@ body {
   margin-top: 23px;
 }
 
+/*MAIN, частина description-toothpaste-------------------------------------------------------------------MAIN, частина description-toothpaste*/
+.main__description-toothpaste { 
+  display: flex;
+  justify-content: space-between;
+  background: #FFFFFF;
+  overflow: hidden;
+}
 
-/*МЕДІА-ЗАПИТИ------------------------------------------------------------------------------------------------------------------МЕДІА-ЗАПИТИ--------------*/ 
+.description-toothpaste__block-text {
+  width: 400px;
+  margin-top: 160px;
+  margin-left: 210px;
+  margin-bottom: 162px;
+  overflow: hidden;
+}
+
+.description-toothpaste__title_third {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.4300000071525574px;
+  text-align: left;
+  color: #526E3E;
+  margin-top: 47px;
+}
+
+.description-toothpaste__paragraph {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #526E3E;
+  margin-top: 23px;
+}
+
+
+
+
+/*МЕДІА-ЗАПИТИ----------МЕДІА-ЗАПИТИ------------МЕДІА-ЗАПИТИ-----------МЕДІА-ЗАПИТИ-------------МЕДІА-ЗАПИТИ-------------------МЕДІА-ЗАПИТИ--------------*/ 
+
 /*1440--------------------------------------------------------------------------------------------------------------------------1440px*/ 
 @media (max-width: 1439px) {
   .general-container {
@@ -258,6 +295,16 @@ body {
     width: 450px;
     padding-left: 30px;
   }
+
+  /*MAIN, частина description-toothpaste-------------------------------------------------------------------MAIN, частина description-toothpaste*/
+  .description-toothpaste__block-text {
+    width: 400px;
+    margin-top: auto;
+    margin-left: 60px;
+    margin-bottom: auto;
+  }
+
+  
 
 } 
 
@@ -308,6 +355,40 @@ body {
     margin-top: 10px;
   }
   
+  /*MAIN, частина description-toothpaste---------------------------------------------------------MAIN, частина description-toothpaste*/ 
+  .main__description-toothpaste { 
+    flex-wrap: wrap-reverse;
+  }
+  .description-toothpaste__block-img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .description-toothpaste__block-text {
+    width: auto;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-left: auto;
+    padding-left: 0px;
+  }
+  .img-flower {
+    margin-left: 430px;
+  }
+  .description-toothpaste__title_third {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0.4300000071525574px;
+    text-align: center;
+    margin-top: 0px;
+  }
+  .description-toothpaste__paragraph {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 18px;
+    text-align: center;
+    margin-top: 10px;
+  }
 
 } 
 
@@ -339,6 +420,10 @@ body {
   }
 
   /*MAIN, частина description-pack---------------------------------------------------------MAIN, частина description-pack*/ 
+  .description-toothpaste__block-text {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
   .img-tube {
     margin-left: 330px;
   }
@@ -354,6 +439,21 @@ body {
     margin-top: 6px;
   }
   
+  /*MAIN, частина description-toothpaste--------------------------------------------------MAIN, частина description-toothpaste*/ 
+  .img-flower {
+    margin-left: 340px;
+  }
+  .description-toothpaste__title_third {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 26px;
+  }
+  .description-toothpaste__paragraph {
+    font-size: 10px;
+    font-weight: 250;
+    line-height: 16px;
+    margin-top: 6px;
+  }
 
 }
   
@@ -398,14 +498,26 @@ body {
     width: 520px;
   }
   .description-pack__block-text {
-    padding-right: 10px;
-    padding-right: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
   }
   .img-tube {
     height: 30px;
     width: 13px;
-    margin-left: 270px;
+    margin-left: 260px;
   }
+
+  /*MAIN, частина description-toothpaste---------------------------------------------------------MAIN, частина description-toothpaste*/ 
+  .img-description-toothpaste {
+    height: 397px;
+    width: 520px;
+  }
+  .img-flower {
+    height: 30px;
+    width: 30px;
+    margin-left: 250px;
+  }
+
 
 } 
 
@@ -452,7 +564,7 @@ body {
   .img-tube {
     height: 15px;
     width: 7px;
-    margin-left: 150px;
+    margin-left: 130px;
   }
   .description-pack__title_third {
     font-size: 16px;
@@ -460,6 +572,28 @@ body {
     line-height: 20px;
   }
   .description-pack__paragraph {
+    font-size: 10px;
+    font-weight: 200;
+    line-height: 14px;
+    margin-top: 2px;
+  }
+
+  /*MAIN, частина description-toothpaste---------------------------------------------------------MAIN, частина description-toothpaste*/ 
+  .img-description-toothpaste {
+    height: 220px;
+    width: 310px;
+  }
+  .img-flower {
+    height: 15px;
+    width: 15px;
+    margin-left: 130px;
+  }
+  .description-toothpaste__title_third {
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 20px;
+  }
+  .description-toothpaste__paragraph {
     font-size: 10px;
     font-weight: 200;
     line-height: 14px;
