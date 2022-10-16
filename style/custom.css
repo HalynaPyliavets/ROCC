@@ -298,6 +298,66 @@ body {
   margin-top: 23px;
 }
 
+/*MAIN, частина our-principles--------------------------------------------------------------------MAIN, частина our-principles*/
+.main__our-principles {
+  width: 100%;
+  max-width: 1440px;
+  background: #FFFFFF;
+  overflow: hidden;
+}
+
+.main__our-principles_content { 
+  background: #FFFFFF;
+  margin-top: 90px;
+  margin-right: 209px;
+  margin-bottom: 75px;
+  margin-left: 209px;
+  padding-right: 30px;
+  padding-left: 30px;
+  overflow: hidden;
+}
+
+.our-principles__title_third {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  color: #526E3E;
+}
+
+.our-principles__block-cards {
+  display: flex;
+  justify-content: start;
+  width: 962px;
+  padding-right: 78px;
+  padding-left: 79px;
+  padding-bottom: 20px;
+  margin-top: 46px;
+  overflow: hidden;
+}
+
+.our-principles__card_article {
+  width: 115px;
+  overflow: hidden;
+}
+
+.our-principles__card_border-img {
+  height: 60px;
+  margin-top: 10px;
+  margin-bottom: 17px;
+  padding-left: 29px;
+}
+
+.our-principles__card_title {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #526E3E;
+}
+
+
 
 /*МЕДІА-ЗАПИТИ----------МЕДІА-ЗАПИТИ------------МЕДІА-ЗАПИТИ-----------МЕДІА-ЗАПИТИ-------------МЕДІА-ЗАПИТИ-------------------МЕДІА-ЗАПИТИ--------------*/ 
 
@@ -328,7 +388,7 @@ body {
     padding-left: 30px;
   }
 
-  /*MAIN, частина description-toothpaste-------------------------------------------------------------------MAIN, частина description-toothpaste*/
+  /*MAIN, частина description-toothpaste----------------------------------------------------MAIN, частина description-toothpaste*/
   .description-toothpaste__block-text {
     width: 400px;
     margin-top: auto;
@@ -336,12 +396,22 @@ body {
     margin-bottom: auto;
   }
 
-  /*MAIN, частина description-healthy---------------------------------------------------------MAIN, частина description-healthy*/ 
+  /*MAIN, частина description-healthy--------------------------------------------------------MAIN, частина description-healthy*/ 
   .description-healthy__block-text {
     width: 450px;
     padding-left: 30px;
   }
 
+  /*MAIN, частина our-principles--------------------------------------------------------------MAIN, частина our-principles*/
+  .main__our-principles_content { 
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .our-principles__block-cards {
+    width: auto;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
 
 } 
 
@@ -351,12 +421,12 @@ body {
     max-width: 997px;
   }
   
-  /*MAIN, частина product-------------------------------------------------------------------MAIN, частина product*/
+  /*MAIN, частина product---------------------------------------------------------------------MAIN, частина product*/
   .product__button {
     margin-left: 410px;
   }
 
-  /*MAIN, частина description-pack---------------------------------------------------------MAIN, частина description-pack*/ 
+  /*MAIN, частина description-pack------------------------------------------------------------MAIN, частина description-pack*/ 
   .main__description-pack { 
     flex-wrap: wrap;
     padding-top: 0px;
@@ -392,7 +462,7 @@ body {
     margin-top: 10px;
   }
   
-  /*MAIN, частина description-toothpaste---------------------------------------------------------MAIN, частина description-toothpaste*/ 
+  /*MAIN, частина description-toothpaste----------------------------------------------------------MAIN, частина description-toothpaste*/ 
   .main__description-toothpaste { 
     flex-wrap: wrap-reverse;
   }
@@ -461,6 +531,43 @@ body {
     text-align: center;
     margin-top: 10px;
   }
+
+  /*MAIN, частина our-principles--------------------------------------------------------------------MAIN, частина our-principles*/
+  .main__our-principles_content { 
+    margin-top: 20px;
+    margin-right: auto; 
+    margin-bottom: 30px;
+    margin-left: 30px; 
+  }
+  .our-principles__block-cards {
+    width: 805px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .our-principles__title_third {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 30px;
+  }
+  .our-principles__card_border-img {
+    height: 54px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding-left: 32px;
+  }
+  .our-principles__card_img {
+    width: 42px;
+  }
+  .our-principles__card_title {
+    font-size: 10px;
+    font-weight: 250;
+    line-height: 16px;
+  }
+
 
 } 
 
@@ -550,7 +657,23 @@ body {
     line-height: 16px;
     margin-top: 6px;
   }
-  
+
+  /*MAIN, частина our-principles--------------------------------------------------------------------MAIN, частина our-principles*/
+  .main__our-principles_content { 
+    margin-bottom: 20px;
+    margin-left: 24px; 
+  }
+  .our-principles__block-cards {
+    width: auto;
+  }
+  .our-principles__title_third {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 26px;
+  }
+  .our-principles__card_article {
+    width: 100px;
+  }  
 
 }
   
@@ -598,7 +721,6 @@ body {
     margin-right: 30px;
   }
   .img-tube {
-    height: 30px;
     width: 13px;
     margin-left: 260px;
   }
@@ -612,7 +734,6 @@ body {
     margin-right: 30px;
   }
   .img-flower {
-    height: 30px;
     width: 30px;
     margin-left: 250px;
   }
@@ -626,11 +747,34 @@ body {
     margin-right: 30px;
   }
   .img-sprout {
-    height: 30px;
     width: 30px;
     margin-left: 260px;
   }
 
+  /*MAIN, частина our-principles--------------------------------------------------------------------MAIN, частина our-principles*/
+  .main__our-principles_content { 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px; 
+  }
+  .our-principles__block-cards {
+    width: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 4px;
+  }
+  .our-principles__card_article {
+    width: 65px;
+  }
+  .our-principles__card_border-img {
+    height: 46px;
+    margin-top: 0px;
+    margin-bottom: 4px;
+    padding-left: 10px;
+  }
+  .our-principles__card_img {
+    width: 36px;
+  }
 
 } 
 
@@ -679,7 +823,6 @@ body {
     margin-left: 5px;
   }
   .img-tube {
-    height: 15px;
     width: 7px;
     margin-left: 130px;
   }
@@ -705,7 +848,6 @@ body {
     margin-left: 5px;
   }
   .img-flower {
-    height: 15px;
     width: 15px;
     margin-left: 130px;
   }
@@ -731,7 +873,6 @@ body {
     margin-left: 5px;
   }
   .img-sprout {
-    height: 15px;
     width: 15px;
     margin-left: 130px;
   }
@@ -745,6 +886,33 @@ body {
     font-weight: 200;
     line-height: 14px;
     margin-top: 2px;
+  }
+
+  /*MAIN, частина our-principles--------------------------------------------------------------------MAIN, частина our-principles*/
+  .main__our-principles_content { 
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: 5px; 
+  }
+  .our-principles__title_third {
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 20px;
+  }
+  .our-principles__card_article {
+    width: 40px;
+  }
+  .our-principles__card_border-img {
+    height: 30px;
+    margin-bottom: 2px;
+  }
+  .our-principles__card_img {
+    width: 24px;
+  }
+  .our-principles__card_title {
+    font-size: 8px;
+    font-weight: 200;
+    line-height: 14px;
   }
 
 }
