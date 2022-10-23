@@ -49,8 +49,8 @@ body {
 }
 
 .header a:hover {
-  border-radius: 4px;
-  background-color: #FDFBED;
+  border-radius: 2px;
+  background-color: #EDDBBE;
   color: black;
   border: 1px solid black; 
   text-shadow: 0 0 .25px #333, 0 0 .25px #333;
@@ -374,7 +374,7 @@ body {
   overflow: hidden;
 }
 
-.shop-products__title_first {
+.shop-products__title_second {
   font-size: 96px;
   font-weight: 700;
   line-height: 100px;
@@ -467,7 +467,7 @@ body {
   overflow: hidden;
 }
 
-.main__picture1__content {
+.main__picture2__content {
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
@@ -477,7 +477,7 @@ body {
   margin-bottom: 15px;
 }
 
-.picture2__title_second {
+.picture2__title_third {
   font-size: 38px;
   font-weight: 700;
   line-height: 44px;
@@ -492,6 +492,132 @@ body {
   text-align: center;
   color: #FFFFFF;
 }
+
+  /*FOOTER------------------------------------------------------------------------------------------------------------------------------FOOTER*/ 
+  .footer {
+    width: 100%;
+    max-width: 1440px;
+    padding-right: 37px;
+    padding-left: 37px;
+    background: #526E3E;
+    overflow: hidden;
+  }
+
+  .footer__content {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-left: 158px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    overflow: hidden;
+  }
+
+  .footer__сopyright {
+    width: 201px;
+    padding-top: 8px;
+    padding-bottom: 9px;
+    overflow: hidden;
+  }
+
+  .footer_title {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+  color: #EDDBBE;
+  }
+
+  .footer__nav {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+
+  .footer__conditions {
+    display: flex;
+    justify-content: space-between;
+    width: 444px;
+    overflow: hidden;
+  }
+
+  .footer__social-media {
+    display: flex;
+    justify-content: space-between;
+    width: 47px;
+    padding-top: 8px;
+    margin-left: 68px;
+    overflow: hidden;
+  }
+
+  .footer__conditions a {
+    text-decoration: none; /*прибираємо підкреслювання посилань*/ 
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    color: #EDDBBE;
+    cursor: pointer;
+    border: 1px solid transparent; 
+  }
+  
+  .footer__conditions a:hover {
+    border-radius: 2px;
+    background-color:#EDDBBE;
+    color: black;
+    border: 1px solid black; 
+    text-shadow: 0 0 .25px #333, 0 0 .25px #333;
+  }
+
+  .footer__form {
+    justify-content: space-between;
+    overflow: hidden;
+  }
+
+  .footer__form_input {
+    width: 242px;
+    height: 32px;
+    border: 1px solid #EDDBBE;
+    border-radius: 0px;
+    background: #526E3E;
+    color: #EDDBBE;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    padding-left: 13px;
+  }
+
+  .footer__form input::placeholder {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    color: #EDDBBE;
+    border-radius: 0px;
+  } 
+
+  .footer-button {
+    width: 42px;
+    height: 32px;
+    background-color: #EDDBBE;
+    color: #EEDBBF;
+    cursor: pointer;
+    border-radius: 0;
+    border: 1px solid #526E3E;
+    
+  }
+  
+  .footer-button:hover {
+    border: 1px solid black;
+    text-shadow: 0 0 .25px #333, 0 0 .25px #333;
+  }
+
 
 
 /*МЕДІА-ЗАПИТИ----------МЕДІА-ЗАПИТИ------------МЕДІА-ЗАПИТИ-----------МЕДІА-ЗАПИТИ-------------МЕДІА-ЗАПИТИ-------------------МЕДІА-ЗАПИТИ--------------*/ 
@@ -569,8 +695,12 @@ body {
     padding-bottom: 100px;
     background-size: cover; 
   }
-
-
+  /*FOOTER-----------------------------------------------------------------------------------------------------------------------------------------------FOOTER*/ 
+  .footer__content {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+  }
 
 } 
 
@@ -743,6 +873,38 @@ body {
     padding-bottom: 287px;
   }
 
+  /*FOOTER-----------------------------------------------------------------------------------------------------------------------------------------------FOOTER*/ 
+  .footer {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .footer__content {
+    padding-top: 20px;
+    padding-right: 0px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+  }
+  .footer_title {
+    font-size: 10px;
+    font-weight: 300;
+    }
+  .footer__conditions {
+    width: 400px;
+  }
+  .footer__social-media {
+    margin-left: 20px;
+  }
+  .footer__form_input {
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 30px;
+  }
+  .footer__form input::placeholder {
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 30px;
+  } 
+
 } 
 
 /*998-----------------------------------------------------------------------------------------------------------------------------------------998px*/ 
@@ -881,6 +1043,14 @@ body {
     line-height: 16px; 
   }
 
+/*FOOTER-----------------------------------------------------------------------------------------------------------------------------------------------FOOTER*/ 
+  .footer__content {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
 }
   
   /*768----------------------------------------------------------------------------------------------------------------------------------768px*/ 
@@ -1015,6 +1185,38 @@ body {
     font-size: 10px;
     font-weight: 250;
     line-height: 16px; 
+  }
+
+  /*FOOTER-----------------------------------------------------------------------------------------------------------------------------------------------FOOTER*/ 
+  .footer__content {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .footer__сopyright {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .footer_title {
+    font-size: 8px;
+    font-weight: 200;
+    }
+  .footer__nav {
+    flex-wrap: wrap;
+    justify-content: center; 
+    padding-bottom: 10px;
+  }
+  .footer__conditions {
+    width: 500px;
+    justify-content: space-around;
+  }
+  .footer__conditions a {
+    text-decoration: none; /*прибираємо підкреслювання посилань*/ 
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+  .footer__social-media {
+    margin-left: 0px;
   }
 
 } 
@@ -1194,6 +1396,22 @@ body {
     font-size: 8px;
     font-weight: 250;
     line-height: 16px; 
+  }
+
+  /*FOOTER-----------------------------------------------------------------------------------------------------------------------------------------------FOOTER*/ 
+  
+  .footer__nav {
+    width: 300px;
+  }
+  .footer__conditions {
+    width: 500px;
+    justify-content: space-around;
+  }
+  .footer__conditions a {
+    text-decoration: none; /*прибираємо підкреслювання посилань*/ 
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 24px;
   }
 
 }
