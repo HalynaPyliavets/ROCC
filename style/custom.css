@@ -26,10 +26,10 @@ body {
 }
 
 .header-nav {
-  justify-content: space-between; /*прижимает содержимое к краям */
+  justify-content: space-between; 
   margin-left: 45px;
   margin-top: 30px;
-  padding-bottom: 13px;
+  padding-bottom: 25px;
   width: 304px;
   overflow: hidden;
   }
@@ -42,10 +42,11 @@ body {
   line-height: 32px;
   letter-spacing: 0.20999999344348907px;
   text-align: left;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   cursor: pointer;
   border: 1px solid transparent; 
+  
 }
 
 .header a:hover {
@@ -53,21 +54,15 @@ body {
   background-color: #EDDBBE;
   color: black;
   border: 1px solid black; 
-  text-shadow: 0 0 .25px #333, 0 0 .25px #333;
+  text-shadow: 0 0 .25px #333, 0 0 0.25px #333;
 }
 
 /*MAIN----------------------------------------------------------------------------------------------------------------MAIN*/
 /*MAIN, частина main-block-------------------------------------------------------------------MAIN, частина main-block*/
-.main__main-block {
+.main-block {
   width: 100%;
   max-width: 1440px;
-  overflow: hidden;
-}
-
-.main-block__background { 
-  width: 100%;
-  max-width: 1440px;
-  padding-top: 254px;
+  padding-top: 253px;
   padding-bottom: 80px;
   background-image: url(../images/Main.png);
   background-repeat: no-repeat; /*обовязково вказувати*/ 
@@ -75,18 +70,23 @@ body {
   overflow: hidden;
 }
 
-.main-block__logo {
-  width: 418px;
-  margin-left: 511px;
-
-}.main-block__title {
-  width: 813px;
-  margin-top: 118px;
-  margin-left: 324px;
+.main-block__logo-block {
+  display: inline-block;
+  margin-left: 511px; 
   overflow: hidden;
 }
-.main-block__title__second {
-  font-family: Roboto;
+
+.main-block__logo {
+  vertical-align: bottom;
+}
+
+.main-block__title {
+  width: 813px;
+  margin-top: 120px;
+  margin-left: 324px; /*задаю у фіксованому розмірі, а не через авто, так як на макеті цей блок НЕ по центру*/ 
+  overflow: hidden;
+}
+.main-block__title_second {
   font-size: 57px;
   font-weight: 700;
   line-height: 62px;
@@ -96,7 +96,7 @@ body {
 }
 
 /*MAIN, частина product-------------------------------------------------------------------MAIN, частина product*/ 
-.main__product {
+.product {
   width: 100%;
   max-width: 1440px;
   padding-top: 98px;
@@ -107,6 +107,8 @@ body {
 
 .product__title { /*переглянути розміри*/ 
   margin-bottom: 44px;
+  margin-right: auto;
+  margin-left: auto;
   overflow: hidden;
 }
 
@@ -144,7 +146,7 @@ body {
 
 .product__card_button {
   background-color: #FDFBED;
-  height: 34px; 
+  height: 33px; 
   width: 335px;
   cursor: pointer;
   border: 1px solid transparent;
@@ -152,6 +154,7 @@ body {
 
 .product__card_button:hover { /*згідно макету - при натисканні кнопка картки підсвічується*/ 
   box-shadow: -2px 10px 16px 0px rgb(201, 200, 200); 
+  
 } 
 
 .product__button {
@@ -163,26 +166,39 @@ body {
   line-height: 20px;
   text-align: center;
   cursor: pointer;
-  border: 2px solid #526E3E;
-  border-radius: 5px;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  border: 1px solid #526E3E;
+  border-radius: 4px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   margin-top: 34px;
   margin-left: 630px;
+  /*останні три позиції - з hover.css*/ 
+  display: inline-block;
+  vertical-align: middle;
+  transition-duration: 0.5s;
 }
 
 .product__button:hover {
   background-color: #FDFBED;
   color: black;
+  /*останні три позиції - з hover.css*/ 
+  transform: scale(1.2);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 }
 
 /*MAIN, частина picture1---------------------------------------------------------------------------MAIN, частина picture1*/ 
-.main__picture1 {
+.picture1 {
   background-image: url(../images/title.png);
   background-repeat: no-repeat; /*обовязково вказувати*/ 
   background-size: contain; /*рекомендовано завжди вказувати*/ 
   padding-top: 102px;
   padding-bottom: 102px;
+  overflow: hidden;
+}
+
+.picture1__title {
+  margin-left: auto;
+  margin-right: auto;
   overflow: hidden;
 }
 
@@ -195,8 +211,9 @@ body {
 }
 
 /*MAIN, частина description-pack--------------------------------------------------------------------MAIN, частина description-pack*/
-.main__description-pack { 
+.description-pack { 
   display: flex;
+  
   padding-top: 85px;
   background: #FFFFFF;
   overflow: hidden;
@@ -364,7 +381,6 @@ body {
   background-repeat: no-repeat; /*обовязково вказувати*/ 
   background-size: contain; /*рекомендовано завжди вказувати*/ 
   padding-top: 200px;
-  padding-right: 748px;
   padding-bottom: 182px;
   padding-left: 116px;
   overflow: hidden;
@@ -391,17 +407,24 @@ body {
   line-height: 20px;
   text-align: center;
   cursor: pointer;
-  border: 2px solid #526E3E;
-  border-radius: 5px;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  border: 1px solid #526E3E;
+  border-radius: 4px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   margin-top: 186px;
   margin-left: 24px;
+  /*останні три позиції - з hover.css*/ 
+  display: inline-block;
+  vertical-align: middle;
+  transition-duration: 0.5s;
 }
 
 .shop-products__button:hover {
   background-color: #FDFBED;
   color: black;
+  /*останні три позиції - з hover.css*/ 
+  transform: scale(1.2);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 }
 
 /*MAIN, частина reviews---------------------------------------------------------------------------MAIN, частина reviews*/ 
@@ -521,12 +544,12 @@ body {
   }
 
   .footer_title {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 17px;
-  letter-spacing: 0.20000000298023224px;
-  text-align: center;
-  color: #EDDBBE;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: center;
+    color: #EDDBBE;
   }
 
   .footer__nav {
@@ -618,6 +641,12 @@ body {
     text-shadow: 0 0 .25px #333, 0 0 .25px #333;
   }
 
+  .footer-button:first-child:hover, :not(.btn-check)+.btn:hover {
+    color: var(--bs-btn-hover-color);
+    background-color:  #526E3E;
+    border-color: black;
+}
+
 
 
 /*МЕДІА-ЗАПИТИ----------МЕДІА-ЗАПИТИ------------МЕДІА-ЗАПИТИ-----------МЕДІА-ЗАПИТИ-------------МЕДІА-ЗАПИТИ-------------------МЕДІА-ЗАПИТИ--------------*/ 
@@ -628,8 +657,31 @@ body {
     max-width: 1199px;
   }
 
+  /*MAIN, частина main-block-----------------------------------------------------------------MAIN, частина main-block*/
+  .main-block {
+    padding-top: 160px;
+    padding-bottom: 40px;
+    background-size: cover; 
+  }
+  .main-block__logo-block {
+    margin-left: 390px; 
+  }
+  .main-block__logo {
+    width: 390px;
+  }
+  .main-block__title {
+    margin-top: 40px;
+    margin-left: auto; 
+    margin-right: auto;
+  }
+  .main-block__title_second {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 52px;
+  }
+
   /*MAIN, частина product-------------------------------------------------------------------MAIN, частина product*/ 
-  .main__product {
+  .product {
     padding-top: 40px;
     padding-bottom: 40px;
   }
@@ -641,6 +693,24 @@ body {
   }
   .product__button {
     margin-left: 510px;
+  }
+
+  /*MAIN, частина picture1---------------------------------------------------------------------------MAIN, частина picture1*/ 
+  .picture1 {
+    background-size: cover; /*рекомендовано завжди вказувати*/ 
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .picture1__title {
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+  }
+  .picture1__title_first {
+    font-size: 80px;
+    font-weight: 300;
+    line-height: 126px;
+    
   }
 
   /*MAIN, частина description-pack---------------------------------------------------------MAIN, частина description-pack*/ 
@@ -674,6 +744,21 @@ body {
     padding-left: 0px;
   }
 
+  /*MAIN, частина shop-products---------------------------------------------------------------------------MAIN, частина shop-products*/ 
+  .main__shop-products {
+    padding-top: 1800px;
+    padding-bottom: 160px;
+    padding-left: 100px;
+  }
+  .shop-products__title_second {
+    font-size: 86px;
+    font-weight: 500;
+    line-height: 100px;
+  }
+  .shop-products__button {
+    margin-top: 120px;
+  }
+
   /*MAIN, частина reviews--------------------------------------------------------------------MAIN, частина reviews*/
   .main__reviews_content {
     padding-top: 80px;
@@ -704,25 +789,54 @@ body {
 
 } 
 
+
 /*1200-----------------------------------------------------------------------------------------------------------------------------1200px*/ 
 @media (max-width: 1200px) {
   .general-container {
     max-width: 997px;
   }
+
+  /*MAIN, частина main-block-----------------------------------------------------------------MAIN, частина main-block*/
+  .main-block {
+    padding-top: 100px;
+    padding-bottom: 40px; 
+  }
+  .main-block__logo-block {
+    margin-left: 345px;     
+  }
+  .main-block__logo {
+    width: 290px;
+  }
+  .main-block__title {
+  margin-top: 20px;
+  width: 800px;
+}
+  .main-block__title_second {
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 30px;
+}
   
   /*MAIN, частина product---------------------------------------------------------------------MAIN, частина product*/
   .product__button {
     margin-left: 410px;
   }
 
+  /*MAIN, частина picture1---------------------------------------------------------------------------MAIN, частина picture1*/ 
+  .picture1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .picture1__title_first {
+    font-size: 50px;
+    font-weight: 250;
+    line-height: 100px;
+  }
+
   /*MAIN, частина description-pack------------------------------------------------------------MAIN, частина description-pack*/ 
-  .main__description-pack { 
+  .description-pack { 
     flex-wrap: wrap;
     padding-top: 0px;
-  }
-  .description-pack__block-img {
-    margin-left: auto;
-    margin-right: auto;
   }
   .description-pack__block-text {
     width: auto;
@@ -755,10 +869,6 @@ body {
   .main__description-toothpaste { 
     flex-wrap: wrap-reverse;
   }
-  .description-toothpaste__block-img {
-    margin-left: auto;
-    margin-right: auto;
-  }
   .description-toothpaste__block-text {
     width: auto;
     margin-top: 0px;
@@ -789,10 +899,6 @@ body {
   /*MAIN, частина description-healthy---------------------------------------------------------MAIN, частина description-healthy*/ 
   .main__description-healthy { 
     flex-wrap: wrap;
-  }
-  .description-healthy__block-img {
-    margin-left: auto;
-    margin-right: auto;
   }
   .description-healthy__block-text {
     width: auto;
@@ -857,6 +963,21 @@ body {
     line-height: 16px;
   }
 
+  /*MAIN, частина shop-products---------------------------------------------------------------------------MAIN, частина shop-products*/ 
+  .main__shop-products {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 60px;
+  }
+  .shop-products__title_second {
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 60px;
+  }
+  .shop-products__button {
+    margin-top: 80px;
+  }
+
   /*MAIN, частина reviews--------------------------------------------------------------------MAIN, частина reviews*/
   .main__reviews_content {
     padding-top: 60px;
@@ -912,15 +1033,37 @@ body {
   .general-container {
     max-width: 767px;
   }
+
+  /*MAIN, частина main-block-----------------------------------------------------------------MAIN, частина main-block*/
+  .main-block {
+    padding-top: 80px;
+    padding-bottom: 30px; 
+  }
+  .main-block__logo-block {
+    margin-left: 285px;
+  }
+  .main-block__logo {
+    width: 200px;
+  }
+  .main-block__title {
+  margin-top: 20px;
+  width: 700px;
+}
+  .main-block__title_second {
+  font-size: 30px;
+  font-weight: 250;
+  line-height: 30px;
+}
+
   /*MAIN, частина product-------------------------------------------------------------------MAIN, частина product*/
-  .main__product {
+  .product {
     padding-top: 20px;
     padding-bottom: 20px;
   }
   .product__title {  
     margin-bottom: 10px;
   }
-  .product__title__second {
+  .product__title_third {
     font-size: 24px;
     font-weight: 400;
     line-height: 26px; 
@@ -932,6 +1075,17 @@ body {
   }
   .product__button {
     margin-left: 300px;
+  }
+
+  /*MAIN, частина picture1---------------------------------------------------------------------------MAIN, частина picture1*/ 
+  .picture1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .picture1__title_first {
+    font-size: 40px;
+    font-weight: 250;
+    line-height: 60px;
   }
 
   /*MAIN, частина description-pack---------------------------------------------------------MAIN, частина description-pack*/ 
@@ -1011,6 +1165,30 @@ body {
     width: 100px;
   }  
 
+  /*MAIN, частина shop-products---------------------------------------------------------------------------MAIN, частина shop-products*/ 
+  .main__shop-products {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+  }
+  .shop-products__title_second {
+    font-size: 40px;
+    font-weight: 350;
+    line-height: 30px;
+  }
+  .shop-products__button {
+    margin-top: 50px;
+  }
+
+  /*MAIN, частина reviews--------------------------------------------------------------------MAIN, частина reviews*/
+  .main__reviews_content {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .reviews_content-article-border {
+    margin-top: 6px;
+  }
+
   /*MAIN, частина reviews--------------------------------------------------------------------MAIN, частина reviews*/
   .reviews_content-article_star {
     width: 80px;
@@ -1032,7 +1210,7 @@ body {
     padding-top: 212px;
     padding-bottom: 187px;
   }
-  .picture2__title_second {
+  .picture2__title_third {
     font-size: 28px;
     font-weight: 700;
     line-height: 36px;
@@ -1058,6 +1236,28 @@ body {
   .general-container {
     max-width: 575px;
   } 
+
+  /*MAIN, частина main-block-----------------------------------------------------------------MAIN, частина main-block*/
+  .main-block {
+    padding-top: 20px;
+    padding-bottom: 10px; 
+  }
+  .main-block__logo-block {
+    margin-left: 245px;
+  }
+  .main-block__logo {
+    width: 100px;
+  }
+  .main-block__title {
+  margin-top: 8px;
+  width: 300px;
+}
+  .main-block__title_second {
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 20px;
+}
+
   /*MAIN, частина product-------------------------------------------------------------------MAIN, частина product*/ 
   .product__title {  
     margin-bottom: 2px;
@@ -1073,10 +1273,10 @@ body {
   .product__card_button {
     width: 270px;
   }
-  .product__title__second {
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 22px; 
+  .product__title_third {
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 20px;
   }
   .product__card_title {
     font-size: 10px;
@@ -1087,6 +1287,17 @@ body {
     margin-top: 20px;
     margin-left: 200px;
   }
+
+    /*MAIN, частина picture1---------------------------------------------------------------------------MAIN, частина picture1*/ 
+    .picture1 {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+    .picture1__title_first {
+      font-size: 32px;
+      font-weight: 250;
+      line-height: 60px;
+    }
 
   /*MAIN, частина description-pack---------------------------------------------------------MAIN, частина description-pack*/ 
   .img-description-pack {
@@ -1152,6 +1363,20 @@ body {
     width: 36px;
   }
 
+  /*MAIN, частина shop-products---------------------------------------------------------------------------MAIN, частина shop-products*/ 
+  .main__shop-products {
+    padding-left: 30px;
+  }
+  .shop-products__title_second {
+    font-size: 30px;
+    font-weight: 350;
+    line-height: 24px;
+  }
+  .shop-products__button {
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+
   /*MAIN, частина reviews--------------------------------------------------------------------MAIN, частина reviews*/
   .main__reviews {
     padding-right: 10px;
@@ -1176,15 +1401,17 @@ body {
     padding-top: 150px;
     padding-bottom: 70px;
   }
-  .picture2__title_second {
+  .picture2__title_third {
     font-size: 26px;
     font-weight: 400;
     line-height: 32px;
+    color: #526E3E;
   }
   .picture2__paragraph {
     font-size: 10px;
     font-weight: 250;
     line-height: 16px; 
+    color: #526E3E;
   }
 
   /*FOOTER-----------------------------------------------------------------------------------------------------------------------------------------------FOOTER*/ 
@@ -1241,7 +1468,7 @@ body {
   .product__card_button {
     width: 250px;
   }
-  .product__title__second {
+  .product__title_third {
     font-size: 12px;
     font-weight: 100;
     line-height: 12px; 
@@ -1254,6 +1481,17 @@ body {
   .product__button {
     margin-top: 10px;
     margin-left: 70px;
+  }
+
+  /*MAIN, частина picture1---------------------------------------------------------------------------MAIN, частина picture1*/ 
+  .picture1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .picture1__title_first {
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 30px;
   }
 
   /*MAIN, частина description-pack---------------------------------------------------------MAIN, частина description-pack*/ 
@@ -1358,6 +1596,23 @@ body {
     line-height: 14px;
   }
 
+  /*MAIN, частина shop-products---------------------------------------------------------------------------MAIN, частина shop-products*/ 
+  .main__shop-products {
+    padding-top: 60px;
+    padding-left: 20px;
+  }
+  .shop-products__title_border {
+    margin-left: 10px;
+  }
+  .shop-products__title_second {
+    font-size: 20px;
+    font-weight: 250;
+    line-height: 20px;
+  }
+  .shop-products__button {
+    margin-top: 70px;
+  }
+
   /*MAIN, частина reviews--------------------------------------------------------------------MAIN, частина reviews*/
   .main__reviews_content {
     flex-wrap: wrap;
@@ -1387,7 +1642,7 @@ body {
     padding-top: 50px;
     padding-bottom: 50px;
   }
-  .picture2__title_second {
+  .picture2__title_third {
     font-size: 20px;
     font-weight: 250;
     line-height: 20px;
@@ -1399,7 +1654,6 @@ body {
   }
 
   /*FOOTER-----------------------------------------------------------------------------------------------------------------------------------------------FOOTER*/ 
-  
   .footer__nav {
     width: 300px;
   }

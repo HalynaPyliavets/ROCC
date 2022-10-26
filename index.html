@@ -49,7 +49,7 @@
   <!--HEADER-->
   <header> <!--АДАПТИВНЕ меню header-nav із bootstrap-->
     <div class="general-container">  <!--типовий контейнер для всіх глобальних частин сайту із шириною, центруванням-->
-      <nav class="header navbar navbar-expand-lg"> 
+      <nav class="navbar navbar-expand-lg header"> 
         <div class="container-fluid">
 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -82,35 +82,34 @@
   </header>
 
   <!--MAIN-->
-  <main>
+  <main class="main"> 
+
     <div class="general-container"> <!--типовий контейнер для всіх глобальних частин сайту із шириною, центруванням...-->
+
       <section> <!--MAIN, частина main-block--> 
-        <div class="main__main-block">
-          <div class="main-block__background">
-            <a href="./index.html"> 
-              <img src="./images/Logo.svg" alt="ROCC" class="main-block__logo">
+        <div class="main-block"> 
+            <a href="./index.html" class="main-block__logo-block"> 
+              <img src="./images/Logo.svg" alt="ROCC" class="main-block__logo"> 
             </a>
-            <div class="main-block__title">
-              <h2 class="main-block__title__second">Natural + Sustainable Oral Care</h2>
+            <div class="main-block__title"> 
+              <h2 class="main-block__title_second">Natural + Sustainable Oral Care</h2>  
             </div>
-          </div>
         </div>
       </section>
 
       <section> <!--MAIN, частина product--> 
-        <div class="main__product">
-
+        <div class="product">  
           <div class="product__title"> <!--заголовок-->
-            <h3 class="product__title_third">
+            <h3 class="product__title_third"> 
               We’re refreshing, but not just because we’re toothpaste.
             </h3>
           </div>
 
           <div class="product__card"> <!--картки продуктів-->
-            <article class="product__card_article">
-                <img src="./images/product-1.png" alt="ROCC-product-1" class="product__card_img" > 
-                <h4 class="product__card_title">River Mint + Green Tea Toothpaste &mdash; &#36;10.0</h4>
-                <button class="product__card_button" title="select product"></button>
+            <article class="product__card_article"> 
+                <img src="./images/product-1.png" alt="ROCC-product-1" class="product__card_img"> 
+                <h4 class="product__card_title">River Mint + Green Tea Toothpaste &mdash; &#36;10.0</h4> 
+                <button class="product__card_button" title="select product"></button> 
             </article>
 
             <article class="product__card_article">
@@ -140,16 +139,16 @@
 
       <section> <!--MAIN, частина picture1--> 
       <!--ВАЖЛИВО - на макеті надпис НЕ повний, якщо скопіювати всю строку, а не тільки те, що видно - то там надпис на три строки, тому відступи на макеті НЕвірні-->
-        <div class="main__picture1"> 
+        <div class="picture1"> 
+          <div class="picture1__title">
             <h1 class="picture1__title_first">Biodegradable Tubes. Vitamins. Vegan. Cruelty Free.</h1>
+          </div>
         </div>
       </section>
 
       <section> <!--MAIN, частина description-pack--> 
-        <div class="main__description-pack">
-          <div class="description-pack__block-img"> 
-            <img src="./images/description-pack.png" alt="description-pack" class="img-description-pack">
-          </div>
+        <div class="description-pack">
+          <img src="./images/description-pack.png" alt="description-pack" class="img-description-pack">
 
           <div class="description-pack__block-text">
             <img src="./images/tube.png" alt="tube" class="img-tube">
@@ -191,19 +190,14 @@
             </p>
           </div>
 
-          <div class="description-toothpaste__block-img"> 
-            <img src="./images/description-toothpaste.png" alt="description-toothpaste" class="img-description-toothpaste">
-          </div>
-
+          <img src="./images/description-toothpaste.png" alt="description-toothpaste" class="img-description-toothpaste">
 
         </div>
       </section>
 
       <section> <!--MAIN, частина description-healthy--> 
         <div class="main__description-healthy">
-          <div class="description-healthy__block-img"> 
-            <img src="./images/description-healthy.png" alt="description-healthy" class="img-description-healthy">
-          </div>
+          <img src="./images/description-healthy.png" alt="description-healthy" class="img-description-healthy">
 
           <div class="description-healthy__block-text">
             <img src="./images/sprout.png" alt="tube" class="img-sprout">
