@@ -13,13 +13,14 @@ body {
 .header-general {
   width: 100%;
   background-color: #526E3E;
-  overflow: hidden; 
+  margin: 0 auto;
+  overflow: hidden;
 }
 .header {
   width: 100%;
   max-width: 1440px;
-  background-color: #526E3E;
   padding: 0;
+  margin: 0 auto;
   overflow: hidden; 
 }
 
@@ -59,8 +60,8 @@ body {
 /*MAIN, частина main-block-------------------------------------------------------------------MAIN, частина main-block*/
 .main-block-general {
   width: 100%;
-  margin: 0 auto;
   background: #FFFFFF;
+  margin: 0 auto;
   overflow: hidden;
 }
 
@@ -68,11 +69,11 @@ body {
   width: 100%;
   max-width: 1440px;
   padding-top: 253px;
-  padding-bottom: 81px;
+  padding-bottom: 80px;
   background-image: url(../images/Main.png);
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat; /*обовязково вказувати*/ 
+  background-size: contain; /*рекомендовано завжди вказувати*/ 
   margin: 0 auto;
-  background-size: contain; 
   overflow: hidden;
 }
 
@@ -102,13 +103,6 @@ body {
 }
 
 /*MAIN, частина product-------------------------------------------------------------------MAIN, частина product*/ 
-.product-general {
-  width: 100%;
-  margin: 0 auto;
-  background: #FFFFFF;
-  overflow: hidden;
-}
-
 .product {
   width: 100%;
   max-width: 1440px;
@@ -142,7 +136,7 @@ body {
   overflow: hidden;
 }
 
-.card-block__article { /*карточка*/ 
+.card-block__article-block { /*карточка*/ 
   padding-right: 1px;
   padding-left: 1px;
   overflow: hidden;
@@ -200,19 +194,12 @@ body {
 }
 
 /*MAIN, частина picture1---------------------------------------------------------------------------MAIN, частина picture1*/ 
-.picture1-general {
-  width: 100%;
-  margin: 0 auto;
-  background: #FFFFFF;
-  overflow: hidden;
-}
-
 .picture1 {
   width: 100%;
   max-width: 1440px;
   background-image: url(../images/title.png);
-  background-repeat: no-repeat; 
-  background-size: contain; 
+  background-repeat: no-repeat; /*обовязково вказувати*/ 
+  background-size: contain; /*рекомендовано завжди вказувати*/ 
   padding-top: 103px;
   padding-bottom: 102px;
   margin: 0 auto;
@@ -234,17 +221,11 @@ body {
 }
 
 /*MAIN, частина description-pack--------------------------------------------------------------------MAIN, частина description-pack*/
-.description-pack-general {
-  width: 100%;
-  margin: 0 auto;
-  background: #FFFFFF;
-  overflow: hidden;
-}
 .description-pack { 
   width: 100%;
   max-width: 1440px;
-  padding-top: 85px;
   display: flex;
+  padding-top: 87px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -277,19 +258,12 @@ body {
 }
 
 /*MAIN, частина description-toothpaste-------------------------------------------------------------------MAIN, частина description-toothpaste*/
-.description-toothpaste-general {
-  width: 100%;
-  margin: 0 auto;
-  background: #FFFFFF;
-  overflow: hidden;
-}
-
 .description-toothpaste { 
   width: 100%;
   max-width: 1440px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
   overflow: hidden;
 }
 
@@ -321,27 +295,19 @@ body {
 }
 
 /*MAIN, частина description-healthy--------------------------------------------------------------------MAIN, частина description-healthy*/
-.description-healthy-general {
-  width: 100%;
-  margin: 0 auto;
-  background: #FFFFFF;
-  overflow: hidden;
-}
-
 .description-healthy { 
   width: 100%;
   max-width: 1440px;
-  margin: 0 auto;
   display: flex;
-  background: #FFFFFF;
+  margin: 0 auto;
   overflow: hidden;
 }
 
 .healthy-block {
   width: 530px;
-  margin-top: 136px;
-  margin-bottom: 100px;
-  padding-left: 126px;
+  margin-top: 130px;
+  margin-bottom: 102px;
+  padding-left: 130px;
   overflow: hidden;
 }
 
@@ -365,13 +331,6 @@ body {
 }
 
 /*MAIN, частина our-principles--------------------------------------------------------------------MAIN, частина our-principles*/
-.our-principles-general {
-  width: 100%;
-  margin: 0 auto;
-  background: #FFFFFF;
-  overflow: hidden;
-}
-
 .our-principles {
   width: 100%;
   max-width: 1440px;
@@ -380,6 +339,7 @@ body {
 }
 
 .our-principles__content { 
+  background: #FFFFFF;
   margin-top: 90px;
   margin-right: 209px;
   margin-bottom: 75px;
@@ -397,7 +357,7 @@ body {
   color: #526E3E;
 }
 
-.principles-card-block {
+.principles-cards {
   display: flex;
   justify-content: start;
   width: 962px;
@@ -408,19 +368,20 @@ body {
   overflow: hidden;
 }
 
-.principles-card-block__article {
+.principles-cards__article-block {
   width: 115px;
   overflow: hidden;
 }
 
-.principles-card-block__img-block {
+.principles-cards__img-block {
   height: 60px;
   margin-top: 10px;
   margin-bottom: 17px;
   padding-left: 29px;
+  overflow: hidden;
 }
 
-.principles-card-block__title {
+.principles-cards__title {
   font-size: 13px;
   font-weight: 400;
   line-height: 17px;
@@ -429,18 +390,12 @@ body {
 }
 
 /*MAIN, частина shop-products---------------------------------------------------------------------------MAIN, частина shop-products*/ 
-.shop-products-general {
-  width: 100%;
-  margin: 0 auto;
-  background: #FFFFFF;
-  overflow: hidden;
-}
 .shop-products {
   width: 100%;
   max-width: 1440px;
   background-image: url(../images/shop-products.png);
-  background-repeat: no-repeat; 
-  background-size: cover; 
+  background-repeat: no-repeat; /*обовязково вказувати*/ 
+  background-size: contain; /*рекомендовано завжди вказувати*/ 
   padding-top: 200px;
   padding-bottom: 182px;
   padding-left: 116px;
@@ -490,18 +445,12 @@ body {
 }
 
 /*MAIN, частина reviews---------------------------------------------------------------------------MAIN, частина reviews*/ 
-.reviews-general {
-  width: 100%;
-  margin: 0 auto;
-  background: #FFFFFF;
-  overflow: hidden;
-}
 .reviews {
   width: 100%;
   max-width: 1440px;
-  margin: 0 auto;
   padding-right: 37px;
   padding-left: 37px;
+  margin: 0 auto;
   overflow: hidden;
 }
 
@@ -515,7 +464,7 @@ body {
   overflow: hidden;
 }
 
-.reviews-content__article {
+.reviews-content__article-block {
   width: 290px;
   overflow: hidden;
 }
@@ -531,14 +480,14 @@ body {
   overflow: hidden;
 }
 
-.reviews-content__paragraph-block {
+.reviews-content__text-block {
   margin-top: 16px;
   margin-right: 4px;
   margin-left: 4px;
   overflow: hidden;
 }
 
-.reviews-content__paragraph {
+.reviews-content__text {
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -547,35 +496,29 @@ body {
 }
 
 /*MAIN, частина picture2---------------------------------------------------------------------------MAIN, частина picture2*/ 
-.picture2-general {
-  width: 100%;
-  margin: 0 auto;
-  background: #FFFFFF;
-  overflow: hidden;
-}
 .picture2 {
   width: 100%;
   max-width: 1440px;
-  margin: 0 auto;
   background-image: url(../images/picture2.png);
   background-repeat: no-repeat; /*обовязково вказувати*/ 
   background-size: contain; /*рекомендовано завжди вказувати*/ 
   padding-top: 512px;
   padding-bottom: 487px;
+  margin: 0 auto;
   overflow: hidden;
 }
 
-.picture2__content {
+.picture2-content {
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
 }
 
-.picture2__title-block {
+.picture2-content__title-block {
   margin-bottom: 15px;
 }
 
-.picture2__title_third {
+.picture2-content__title_third {
   font-size: 38px;
   font-weight: 700;
   line-height: 44px;
@@ -583,11 +526,11 @@ body {
   color: #FFFFFF;
 }
 
-.picture2__paragraph-block {
+.picture2-content__paragraph-block {
   overflow: hidden;
 }
 
-.picture2__paragraph {
+.picture2-content__paragraph {
   font-size: 16px;
   font-weight: 700;
   line-height: 22px;
@@ -598,17 +541,16 @@ body {
   /*FOOTER------------------------------------------------------------------------------------------------------------------------------FOOTER*/ 
   .footer-general {
     width: 100%;
-    margin: 0 auto;
     background: #526E3E;
+    margin: 0 auto;
     overflow: hidden;
   }
   .footer {
     width: 100%;
     max-width: 1440px;
-    margin: 0 auto;
     padding-right: 37px;
     padding-left: 37px;
-    background: #526E3E;
+    margin: 0 auto;
     overflow: hidden;
   }
 
@@ -651,7 +593,7 @@ body {
     overflow: hidden;
   }
 
-  .footer-nav__social-media {
+  .footer-social-media {
     display: flex;
     justify-content: space-between;
     width: 47px;
@@ -750,7 +692,7 @@ body {
     background-size: cover; 
   }
   .main-block__logo-block {
-    margin-left: 345px; 
+    margin-left: 390px; 
   }
   .main-block__logo {
     width: 390px;
@@ -774,7 +716,7 @@ body {
   .card-block { /*контейнер з картками*/ 
     justify-content: space-around; 
   }
-  .product__title-block {  
+  .card-block__title {  
     margin-bottom: 20px;
   }
   .product__button {
@@ -824,7 +766,7 @@ body {
     padding-right: 0px;
     padding-left: 0px;
   }
-  .principles-card-block {
+  .principles-cards {
     width: auto;
     padding-right: 0px;
     padding-left: 0px;
@@ -832,11 +774,11 @@ body {
 
   /*MAIN, частина shop-products---------------------------------------------------------------------------MAIN, частина shop-products*/ 
   .shop-products {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    background-size: cover; 
+    padding-top: 180px;
+    padding-bottom: 160px;
+    padding-left: 100px;
   }
-  .shop-products__title_second {
+  .shop-products__title-block {
     font-size: 86px;
     font-weight: 500;
     line-height: 100px;
@@ -860,6 +802,12 @@ body {
     padding-bottom: 387px;
   }
 
+  /*MAIN, частина shop-products---------------------------------------------------------------------------MAIN, частина shop-products*/ 
+  .main__shop-products {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-size: cover; 
+  }
   /*FOOTER-----------------------------------------------------------------------------------------------------------------------------------------------FOOTER*/ 
   .footer-content {
     padding-top: 40px;
@@ -867,6 +815,7 @@ body {
     padding-left: 20px;
   }
 } 
+
 
 /*1200-----------------------------------------------------------------------------------------------------------------------------1200px*/ 
 @media (max-width: 1200px) {
@@ -918,7 +867,7 @@ body {
     padding-top: 0px;
   }
   .pack-block {
-    width: 720px;
+    width: auto;
     margin-top: 0px;
     margin-right: auto;
     margin-bottom: 10px;
@@ -926,7 +875,7 @@ body {
     padding-left: 0px;
   }
   .pack-block__img {
-    margin-left: 350px;
+    margin-left: 150px;
   }
   .pack-block__title {
     font-size: 24px;
@@ -950,7 +899,7 @@ body {
     justify-content: center;
   }
   .toothpaste-block {
-    width: 720px;
+    width: auto;
     margin-top: 0px;
     margin-right: auto;
     margin-bottom: 10px;
@@ -958,7 +907,7 @@ body {
     padding-left: 0px;
   }
   .toothpaste-block__img {
-    margin-left: 350px;
+    margin-left: 130px;
   }
   .toothpaste-block__title {
     font-size: 24px;
@@ -982,15 +931,16 @@ body {
     justify-content: center;
   }
   .healthy-block {
-    width: auto;
+    width: 276px;
     margin-top: 0px;
     margin-right: auto;
     margin-bottom: 10px;
     margin-left: auto;
     padding-left: 0px;
   }
+
   .healthy-block__img {
-    margin-left: 130px;
+    margin-left: 150px;
   }
   .healthy-block__title {
     font-size: 24px;
@@ -1015,7 +965,7 @@ body {
     margin-bottom: 30px;
     margin-left: 30px; 
   }
-  .principles-card-block {
+  .principles-cards {
     width: 805px;
     padding-right: 0px;
     padding-left: 0px;
@@ -1029,16 +979,16 @@ body {
     font-weight: 300;
     line-height: 30px;
   }
-  .principles-card-block__img-block {
+  .principles-cards__img-block {
     height: 54px;
     margin-top: 2px;
     margin-bottom: 2px;
     padding-left: 32px;
   }
-  .principles-card-block__img {
+  .principles-cards__img {
     width: 42px;
   }
-  .principles-card-block__title {
+  .principles-cards__title {
     font-size: 10px;
     font-weight: 250;
     line-height: 16px;
@@ -1049,6 +999,7 @@ body {
     padding-top: 100px;
     padding-bottom: 100px;
     padding-left: 60px;
+    background-size: cover;
   }
   .shop-products__title_second {
     font-size: 60px;
@@ -1064,12 +1015,12 @@ body {
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  .reviews-content__paragraph-block {
+  .reviews-content__article-block {
     margin-top: 6px;
   }
 
   /*MAIN, частина picture2---------------------------------------------------------------------------MAIN, частина picture2*/ 
-  .main__picture2 {
+  .picture2 {
     background-size: cover; /*рекомендовано завжди вказувати*/ 
     padding-top: 312px;
     padding-bottom: 287px;
@@ -1087,25 +1038,26 @@ body {
     padding-left: 0px;
   }
   .footer-сopyright__title {
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 300;
     }
   .footer-nav__conditions {
     width: 400px;
   }
-  .footer-nav__social-media {
+  .footer-social-media {
     margin-left: 20px;
   }
   .footer-form__input {
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 300;
     line-height: 30px;
   }
   .footer-form__input::placeholder {
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 300;
     line-height: 30px;
   } 
+
 } 
 
 /*998-----------------------------------------------------------------------------------------------------------------------------------------998px*/ 
@@ -1182,7 +1134,7 @@ body {
     line-height: 26px;
   }
   .pack-block__paragraph {
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 250;
     line-height: 16px;
     margin-top: 6px;
@@ -1202,19 +1154,19 @@ body {
     line-height: 26px;
   }
   .toothpaste-block__paragraph {
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 250;
     line-height: 16px;
     margin-top: 6px;
   }
 
   /*MAIN, частина description-healthy---------------------------------------------------------MAIN, частина description-healthy*/ 
-  .healthy-block {
+  .description-healthy {
     margin-left: 33px;
     width: 700px;
   }
   .healthy-block__img {
-    margin-left: 330px;
+    margin-left: 130px;
   }
   .healthy-block__title {
     font-size: 22px;
@@ -1222,7 +1174,7 @@ body {
     line-height: 26px;
   }
   .healthy-block__paragraph {
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 250;
     line-height: 16px;
     margin-top: 6px;
@@ -1233,7 +1185,7 @@ body {
     margin-bottom: 20px;
     margin-left: 24px; 
   }
-  .principles-card-block {
+  .principles-cards {
     width: auto;
   }
   .our-principles__title {
@@ -1241,7 +1193,7 @@ body {
     font-weight: 300;
     line-height: 26px;
   }
-  .principles-card-block__title {
+  .principles-cards__article-block {
     width: 100px;
   }  
 
@@ -1265,6 +1217,9 @@ body {
     padding-top: 60px;
     padding-bottom: 60px;
   }
+  .reviews-content__article-block {
+    margin-top: 6px;
+  }
   .reviews-content__star-block {
     width: 80px;
     padding-top: 4px;
@@ -1273,11 +1228,8 @@ body {
   .reviews-content__star {
     width: 10px;
   }
-  .reviews-content__paragraph-block {
-    margin-top: 6px;
-  }
-  .reviews-content__paragraph {
-    font-size: 12px;
+  .reviews-content__text {
+    font-size: 10px;
     font-weight: 250;
     line-height: 16px;
   }
@@ -1288,13 +1240,13 @@ body {
     padding-top: 212px;
     padding-bottom: 187px;
   }
-  .picture2__title_third {
+  .picture2-content__title_third {
     font-size: 28px;
     font-weight: 700;
     line-height: 36px;
   }
-  .picture2__paragraph {
-    font-size: 12px;
+  .picture2-content__paragraph {
+    font-size: 10px;
     font-weight: 250;
     line-height: 16px; 
   }
@@ -1325,7 +1277,7 @@ body {
   .main-block__logo {
     width: 100px;
   }
-  .main-block__title-block {
+  .main-block__title_second {
   margin-top: 8px;
   width: 300px;
 }
@@ -1356,10 +1308,9 @@ body {
     width: 270px;
   }
   .card-block__title {
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 300;
     line-height: 22px;
-    text-align: left;
   }
   .product__button {
     margin-top: 20px;
@@ -1404,17 +1355,22 @@ body {
   }
 
   /*MAIN, частина description-healthy---------------------------------------------------------MAIN, частина description-healthy*/ 
+  .description-healthy {
+    width: 516px;
+  }
   .description-healthy__img {
     height: 420px;
     width: 520px;
   }
   .healthy-block {
-    margin-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .healthy-block__img {
     width: 30px;
-    margin-left: 260px;
+    margin-left: 130px;
   }
+    
 
   /*MAIN, частина our-principles--------------------------------------------------------------------MAIN, частина our-principles*/
   .our-principles__content { 
@@ -1422,26 +1378,23 @@ body {
     margin-bottom: 10px;
     margin-left: 10px; 
   }
-  .principles-card-block {
+  .principles-cards {
     width: auto;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 4px;
   }
-  .principles-card-block__article {
+  .principles-cards__article-block {
     width: 65px;
   }
-  .principles-card-block__img-block {
+  .principles-cards__img-block {
     height: 46px;
     margin-top: 0px;
     margin-bottom: 4px;
     padding-left: 10px;
   }
-  .principles-card-block__img {
+  .principles-cards__img {
     width: 36px;
-  }
-  .principles-card-block__title {
-    width: 65px;
   }
 
   /*MAIN, частина shop-products---------------------------------------------------------------------------MAIN, частина shop-products*/ 
@@ -1469,7 +1422,7 @@ body {
     padding-bottom: 30px;
     padding-left: 0px;
   }
-  .reviews-content__article {
+  .reviews-content__article-block {
     width: 160px;
   }
   .reviews-content__star-block {
@@ -1488,8 +1441,8 @@ body {
     line-height: 32px;
     color: #526E3E;
   }
-  .picture2__paragraph {
-    font-size: 12px;
+  .picture2-content__paragraph {
+    font-size: 10px;
     font-weight: 250;
     line-height: 16px; 
     color: #526E3E;
@@ -1523,7 +1476,7 @@ body {
     font-weight: 300;
     line-height: 24px;
   }
-  .footer-nav__social-media {
+  .footer-social-media {
     margin-left: 0px;
   }
 } 
@@ -1535,17 +1488,12 @@ body {
   }
 
   .header a:hover {
-    width: 200px;
+    width: 100px;
   }
 
   /*MAIN, частина product-------------------------------------------------------------------MAIN, частина product*/ 
   .product__title-block {  
     margin-bottom: 0px;
-  }
-  .product__title_third {
-    font-size: 12px;
-    font-weight: 100;
-    line-height: 12px; 
   }
   .card-block {
     margin-right: 0px;
@@ -1557,6 +1505,11 @@ body {
   }
   .card-block__button {
     width: 250px;
+  }
+  .product__title_third {
+    font-size: 12px;
+    font-weight: 100;
+    line-height: 12px; 
   }
   .card-block__title {
     font-size: 10px;
@@ -1630,6 +1583,10 @@ body {
   }
 
   /*MAIN, частина description-healthy---------------------------------------------------------MAIN, частина description-healthy*/ 
+    .description-healthy {
+      width: 320px;
+      margin-left: 0px;
+    }
   .description-healthy__img {
     height: 250px;
     width: 310px;
@@ -1640,7 +1597,7 @@ body {
   }
   .healthy-block__img {
     width: 15px;
-    margin-left: 130px;
+    margin-left: 100px;
   }
   .healthy-block__title {
     font-size: 16px;
@@ -1661,23 +1618,22 @@ body {
     margin-left: 5px; 
   }
   .our-principles__title {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 200;
     line-height: 20px;
   }
-  .principles-card-block__article {
+  .principles-cards__article-block {
     width: 40px;
   }
-  .principles-card-block__img-block {
+  .principles-cards__img-block {
     height: 30px;
     margin-bottom: 2px;
   }
-  .principles-card-block__img {
-    width: 20px;
+  .principles-cards__img {
+    width: 24px;
   }
-  .principles-card-block__title {
-    width: 40px;
-    font-size: 10px;
+  .principles-cards__title {
+    font-size: 8px;
     font-weight: 200;
     line-height: 14px;
   }
@@ -1699,25 +1655,29 @@ body {
     margin-top: 70px;
   }
 
-  /*MAIN, частина reviews--------------------------------------------------------------------MAIN, частина reviews*/
+/*MAIN, частина reviews--------------------------------------------------------------------MAIN, частина reviews*/
   .reviews-content {
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 4px;
+    padding-top: 8px;
     padding-bottom: 4px;
   }
-  .reviews-content__article {
-    margin-top: 12px;
-    width: 240px;
+  .reviews-content__article-block {
+    width: 80px;
+  }
+  .reviews-content__text-block {
+    margin-top: 4px;
   }
   .reviews-content__star-block {
     width: 70px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
-  .reviews-content__star {
+
+  .reviews-content__star { 
     width: 8px;
   }
-  .reviews-content__paragraph {
-    font-size: 10px;
+
+  .reviews-content__text {
+    font-size: 8px;
     font-weight: 200;
     line-height: 14px;
   }
@@ -1728,13 +1688,13 @@ body {
     padding-top: 50px;
     padding-bottom: 50px;
   }
-  .picture2__title_third {
+  .picture2-content__title_third {
     font-size: 20px;
     font-weight: 250;
     line-height: 20px;
   }
-  .picture2__paragraph {
-    font-size: 12px;
+  .picture2-content__paragraph {
+    font-size: 10px;
     font-weight: 250;
     line-height: 16px; 
   }
@@ -1753,6 +1713,7 @@ body {
     font-weight: 300;
     line-height: 24px;
   }
+
 }
 
 

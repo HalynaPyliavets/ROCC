@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="ROCC, natural, sustainable oral care, organic"> 
+  <meta name="description" content="ROCC, Natural and Sustainable Oral Care"> 
   <meta name="keywords" content="ROCC, Natural and Sustainable Oral Care"> 
   <meta name="autor" content="Halyna Pyliavets"> 
   <title>ROCC - Natural and Sustainable Oral Care</title>
@@ -35,13 +35,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./style/custom.css"> <!--підключення стилів, йде обовязково після зкидання стилів reset, а не до них; за рекомендацією В'ячеслава прописано після підключенням шрифтів-->
+  
+  <!--підключення карусельки (сайт Slick) - слайдера  по абсолютному посиланню-->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> 
+  <!--переключателі слайдерів стали по бокам слайдера та перетворились на кнопочки (стрілочки)-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="https://kit.fontawesome.com/7a5962ab48.js" crossorigin="anonymous"></script> <!--іконки-->
 
 </head>
 
 <body> 
   <!--HEADER-->
   <header> <!--АДАПТИВНЕ меню header-nav із bootstrap-->
-    <div class="header-general">  
+    <div class="header-general"> 
       <nav class="navbar navbar-expand-lg header"> 
         <div class="container-fluid">
 
@@ -77,25 +84,21 @@
   <!--MAIN-->
   <main class="main"> 
 
-    <section> <!--MAIN, частина main-block--> 
-      <div class="main-block-general"> 
-        
-        <div class="main-block">
-          <a href="./index.html" class="main-block__logo-block"> 
-            <img src="./images/Logo.svg" alt="ROCC" class="main-block__logo"> 
-          </a>
-          <div class="main-block__title-block"> 
-            <h2 class="main-block__title main-block__title_second">Natural + Sustainable Oral Care</h2>  
-          </div>
+    <div class="main-block-general"> 
+
+      <section> <!--MAIN, частина main-block--> 
+        <div class="main-block"> 
+            <a href="./index.html" class="main-block__logo-block"> 
+              <img src="./images/Logo.svg" alt="ROCC" class="main-block__logo"> 
+            </a>
+            <div class="main-block__title-block"> 
+              <h2 class="main-block__title main-block__title_second">Natural + Sustainable Oral Care</h2>  
+            </div>
         </div>
+      </section>
 
-      </div>
-    </section>
-
-    <section> <!--MAIN, частина product--> 
-      <div class="product-general">  
-
-        <div class="product">
+      <section> <!--MAIN, частина product--> 
+        <div class="product">  
           <div class="product__title-block"> <!--заголовок-->
             <h3 class="product__title product__title_third"> 
               We’re refreshing, but not just because we’re toothpaste.
@@ -103,25 +106,25 @@
           </div>
 
           <div class="card-block"> <!--картки продуктів-->
-            <article class="card-block__article"> 
+            <article class="card-block__article-block"> 
                 <img src="./images/product-1.png" alt="ROCC-product-1" class="card-block__img"> 
                 <h4 class="card-block__title">River Mint + Green Tea Toothpaste &mdash; &#36;10.0</h4> 
                 <button class="card-block__button" title="select product"></button> 
             </article>
 
-            <article class="card-block__article">
+            <article class="card-block__article-block">
               <img src="./images/product-2.png" alt="ROCC-product-2" class="card-block__img"> 
               <h4 class="card-block__title">Vitamin B12 Mint + Coconut Oil Toothpaste</h4>
               <button class="card-block__button" title="select product"></button>
             </article>
 
-            <article class="card-block__article">
+            <article class="card-block__article-block">
               <img src="./images/product-3.png" alt="ROCC-product-3" class="card-block__img" >  
               <h4 class="card-block__title">Starter Kit &mdash; &#36;22.00</h4>
               <button class="card-block__button" title="select product"></button>
             </article>
 
-            <article class="card-block__article">
+            <article class="card-block__article-block">
               <img src="./images/product-4.png" alt="ROCC-product-4" class="card-block__img" > 
               <h4 class="card-block__title"> Biodegradable Toothbrush &mdash; &#36;10.0</h4>
               <button class="card-block__button" title="select product"></button>
@@ -132,23 +135,18 @@
           <button class="product__button" title="go to shop all products">Shop all products</button>
           
         </div>
+      </section>
 
-          
-      </div>
-    </section>
-
-    <section> <!--MAIN, частина picture1--> 
-      <div class="picture1-general">
+      <section> <!--MAIN, частина picture1--> 
+      <!--ВАЖЛИВО - на макеті надпис НЕ повний, якщо скопіювати всю строку, а не тільки те, що видно - то там надпис на три строки, тому відступи на макеті НЕвірні-->
         <div class="picture1"> 
           <div class="picture1__title-block">
             <h1 class="picture1__title picture1__title_first">Biodegradable Tubes. Vitamins. Vegan. Cruelty Free.</h1>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section> <!--MAIN, частина description-pack--> 
-      <div class="description-pack-general">
+      <section> <!--MAIN, частина description-pack--> 
         <div class="description-pack">
           <img src="./images/description-pack.png" alt="description-pack" class="description-pack__img">
 
@@ -174,14 +172,12 @@
             </p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section> <!--MAIN, частина description-toothpaste--> 
-      <div class="description-toothpaste-general">
+      <section> <!--MAIN, частина description-toothpaste--> 
         <div class="description-toothpaste">
           <div class="toothpaste-block">
-            <img src="./images/flower.png" alt="toothpaste" class="toothpaste-block__img">
+            <img src="./images/flower.png" alt="tube" class="toothpaste-block__img">
 
             <h3 class="toothpaste-block__title">
               Made with vitamins + <br> earth minerals. 
@@ -202,13 +198,11 @@
           </div>
 
           <img src="./images/description-toothpaste.png" alt="description-toothpaste" class="description-toothpaste__img">
+
         </div>
+      </section>
 
-      </div>
-    </section>
-
-    <section> <!--MAIN, частина description-healthy--> 
-      <div class="description-healthy-general">
+      <section> <!--MAIN, частина description-healthy--> 
         <div class="description-healthy">
           <img src="./images/description-healthy.png" alt="description-healthy" class="description-healthy__img">
 
@@ -232,89 +226,86 @@
             </p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section> <!--MAIN, частина our-principles--> 
-      <div class="our-principles-general">
+      <section> <!--MAIN, частина our-principles--> 
         <div class="our-principles">
           <div class="our-principles__content"> 
             <h3 class="our-principles__title">What we stand for</h3>
   
-            <div class="principles-card-block">
-              <article class="principles-card-block__article"> <!--Vegan Friendly-->
-                <div class="principles-card-block__img-block">
-                  <img src="./images/our-principles/vegan.png" alt="ROCC-our-principles-1" class="principles-card-block__img"> 
+            <div class="principles-cards">
+              <article class="principles-cards__article-block"> <!--Vegan Friendly-->
+                <div class="principles-cards__img-block">
+                  <img src="./images/our-principles/vegan.png" alt="ROCC-our-principles-1" class="principles-cards__img" > 
                 </div>
-                <h5 class="principles-card-block__title">Vegan <br> Friendly </h5>
+                <h5 class="principles-cards__title">Vegan <br> Friendly </h5>
               </article>
   
-              <article class="principles-card-block__article"> <!--Gluten Free-->
-                <div class="principles-card-block__img-block">
-                  <img src="./images/our-principles/gluten-free.png" alt="ROCC-our-principles-2" class="principles-card-block__img">
+              <article class="principles-cards__article-block"> <!--Gluten Free-->
+                <div class="principles-cards__img-block">
+                  <img src="./images/our-principles/gluten-free.png" alt="ROCC-our-principles-2" class="principles-cards__img" >
                 </div>
-                <h5 class="principles-card-block__title">Gluten Free </h5>
+                <h5 class="principles-cards__title">Gluten Free </h5>
               </article>
   
-              <article class="principles-card-block__article"> <!--Naturally Derived Ingredients-->
-                <div class="principles-card-block__img-block">
-                  <img src="./images/our-principles/naturally-ingredients.png" alt="ROCC-our-principles-3" class="principles-card-block__img">
+              <article class="principles-cards__article-block"> <!--Naturally Derived Ingredients-->
+                <div class="principles-cards__img-block">
+                  <img src="./images/our-principles/naturally-ingredients.png" alt="ROCC-our-principles-3" class="principles-cards__img" >
                 </div>
-                <h5 class="principles-card-block__title">Naturally <br> Derived <br> Ingredients </h5>
+                <h5 class="principles-cards__title">Naturally <br> Derived <br> Ingredients </h5>
               </article>
   
-              <article class="principles-card-block__article"> <!--Naturally Whiter Teeth-->
-                <div class="principles-card-block__img-block">
-                  <img src="./images/our-principles/naturally-teeth.png" alt="ROCC-our-principles-4" class="principles-card-block__img"> 
+              <article class="principles-cards__article-block"> <!--Naturally Whiter Teeth-->
+                <div class="principles-cards__img-block">
+                  <img src="./images/our-principles/naturally-teeth.png" alt="ROCC-our-principles-4" class="principles-cards__img" > 
                 </div>
-                <h5 class="principles-card-block__title">Naturally <br> Whiter Teeth </h5>
+                <h5 class="principles-cards__title">Naturally <br> Whiter Teeth </h5>
               </article>
   
-              <article class="principles-card-block__article"> <!--Sustainable-->
-                <div class="principles-card-block__img-block">
-                  <img src="./images/our-principles/sustainable.png" alt="ROCC-our-principles-5" class="principles-card-block__img"> 
+              <article class="principles-cards__article-block"> <!--Sustainable-->
+                <div class="principles-cards__img-block">
+                  <img src="./images/our-principles/sustainable.png" alt="ROCC-our-principles-5" class="principles-cards__img" > 
                 </div>
-                <h5 class="principles-card-block__title">Sustainable </h5>
+                <h5 class="principles-cards__title">Sustainable </h5>
               </article>
   
-              <article class="principles-card-block__article"> <!--Cruelty Free-->
-                <div class="principles-card-block__img-block">
-                  <img src="./images/our-principles/cruelty-free.png" alt="ROCC-our-principles-6" class="principles-card-block__img"> 
+              <article class="principles-cards__article-block"> <!--Cruelty Free-->
+                <div class="principles-cards__img-block">
+                  <img src="./images/our-principles/cruelty-free.png" alt="ROCC-our-principles-6" class="principles-cards__img" > 
                 </div>
-                <h5 class="principles-card-block__title">Cruelty Free </h5>
+                <h5 class="principles-cards__title">Cruelty Free </h5>
               </article>
   
-              <article class="principles-card-block__article"> <!--Bio Degradable Tube-->
-                <div class="principles-card-block__img-block">
-                  <img src="./images/our-principles/bio-tube.png" alt="ROCC-our-principles-7" class="principles-card-block__img"> 
+              <article class="principles-cards__article-block"> <!--Bio Degradable Tube-->
+                <div class="principles-cards__img-block">
+                  <img src="./images/our-principles/bio-tube.png" alt="ROCC-our-principles-7" class="principles-cards__img" > 
                 </div>
-                <h5 class="principles-card-block__title">Bio <br> Degrada <br> ble Tube </h5>
+                <h5 class="principles-cards__title">Bio <br> Degrada <br> ble Tube </h5>
               </article>
             </div>
   
           </div>
         </div>
-      </div>
-    </section>
+        
+      </section>
 
-    <section> <!--MAIN, частина shop-products--> 
-      <div class="shop-products-general">
+      <section> <!--MAIN, частина shop-products-->  
         <div class="shop-products">
           <!--текст-->
           <div class="shop-products__title-block">
             <h2 class="shop-products__title shop-products__title_second">Get it in your <br> mouth.</h2>
           </div>
+            
           <!--кнопка частини shop-products-->
           <button class="shop-products__button" title="go to shop all products">Shop all products</button>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section> <!--MAIN, частина reviews--> 
-      <div class="reviews-general">
+      <section> <!--MAIN, частина reviews--> 
         <div class="reviews">
           <div class="reviews-content">
-            <article class="reviews-content__article"> <!--review 1--> 
+
+            <article class="reviews-content__article-block"> <!--review 1--> 
               <div class="reviews-content__star-block">
                 <img src="./images/star.png" alt="star" class="reviews-content__star"> 
                 <img src="./images/star.png" alt="star" class="reviews-content__star">
@@ -323,21 +314,21 @@
                 <img src="./images/star.png" alt="star" class="reviews-content__star">
               </div>
               
-              <div class="reviews-content__paragraph-block">
-                <p class="reviews-content__paragraph">
+              <div class="reviews-content__text-block">
+                <p class="reviews-content__text">
                   Gracie — May 10, 2021 
                 </p>
               </div>
 
-              <div class="reviews-content__paragraph-block">
-                <p class="reviews-content__paragraph">
+              <div class="reviews-content__text-block">
+                <p class="reviews-content__text">
                   This toothpaste is super cute in my bathroom - no more ugly toothpaste tubes. 
                   And it's biodegradable, win-win! 
                 </p>
               </div> 
             </article>
 
-            <article class="reviews-content__article"> <!--review 2--> 
+            <article class="reviews-content__article-block"> <!--review 2--> 
               <div class="reviews-content__star-block">
                 <img src="./images/star.png" alt="star" class="reviews-content__star"> 
                 <img src="./images/star.png" alt="star" class="reviews-content__star">
@@ -346,21 +337,21 @@
                 <img src="./images/star.png" alt="star" class="reviews-content__star">
               </div>
               
-              <div class="reviews-content__paragraph-block">
-                <p class="reviews-content__paragraph">
+              <div class="reviews-content__text-block">
+                <p class="reviews-content__text">
                   Tawni — May 5, 2021 
                 </p>
               </div>
 
-              <div class="reviews-content__paragraph-block">
-                <p class="reviews-content__paragraph">
+              <div class="reviews-content__text-block">
+                <p class="reviews-content__text">
                   We love these products!! And we can’t say enough great things about the natural 
                   ingredients either! 3 benefits in 1!! :)
                 </p>
               </div> 
             </article>
 
-            <article class="reviews-content__article"> <!--review 3--> 
+            <article class="reviews-content__article-block"> <!--review 3--> 
               <div class="reviews-content__star-block">
                 <img src="./images/star.png" alt="star" class="reviews-content__star"> 
                 <img src="./images/star.png" alt="star" class="reviews-content__star">
@@ -369,44 +360,43 @@
                 <img src="./images/star.png" alt="star" class="reviews-content__star">
               </div>
               
-              <div class="reviews-content__paragraph-block">
-                <p class="reviews-content__paragraph">
+              <div class="reviews-content__text-block">
+                <p class="reviews-content__text">
                   David — April 8, 2021  
                 </p>
               </div>
 
-              <div class="reviews-content__paragraph-block">
-                <p class="reviews-content__paragraph">
+              <div class="reviews-content__text-block">
+                <p class="reviews-content__text">
                   B12 in a toothpaste?! As a long-term vegan this is so exciting! Love the super minty taste too.
                 </p>
               </div> 
             </article>
+
           </div>
+
         </div>
-      </div>
+      </section>
 
-    </section>
-
-    <section>
-      <div class="picture2-general"> 
+      <section> <!--MAIN, частина picture2--> 
         <div class="picture2"> 
-          <div class="picture2__content">
-            <div class="picture2__title-block">
-              <h3 class="picture2__title picture2__title_third">Who doesn’t want to be connected?</h3>
+          <div class="picture2-content">
+            <div class="picture2-content__title-block">
+              <h3 class="picture2-content__title picture2-content__title_third">Who doesn’t want to be connected?</h3>
             </div>
-            <div class="picture2__paragraph-block">
-              <p class="picture2__paragraph">@roccnaturals</p>
+            <div class="picture2-content__paragraph-block">
+              <p class="picture2-content__paragraph">@roccnaturals</p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
+    </div>
   </main>
 
   <!--FOOTER-->
   <footer> 
-    <div class="footer-general">
+    <div class="footer-general"> <!--типовий контейнер для всіх глобальних частин сайту із шириною, центруванням...-->
       <div class="footer">
         <div class="footer-content">
           
@@ -428,7 +418,7 @@
               </li>
               
               <!--соц мережі-->
-              <li class="footer-nav__social-media">
+              <li class="footer-social-media">
                 <a href="./index.html">
                   <img src="./images/footer/insta.png" alt="SocialMediaInsta">
                 </a>
